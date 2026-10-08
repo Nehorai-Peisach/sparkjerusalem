@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>בנק ירושלים | תצוגת מובייל</title>
+  <meta name="description" content="תיק השקעות ומסחר בניירות ערך בבנק ירושלים">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="בנק ירושלים">
+  <meta property="og:title" content="בנק ירושלים | תצוגת מובייל">
+  <meta property="og:description" content="תיק השקעות ומסחר בניירות ערך בבנק ירושלים">
+  <meta property="og:url" content="https://nehorai-peisach.github.io/sparkjerusalem/mobile">
+  <meta property="og:image" content="https://nehorai-peisach.github.io/sparkjerusalem/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://nehorai-peisach.github.io/sparkjerusalem/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap" rel="stylesheet">
+  <script>
+    // on a real phone there is no frame: open the site itself
+    if (window.matchMedia('(max-width: 600px)').matches) location.replace('./');
+  </script>
+  <style>
+    :root {
+      --bg: #eef1f6;
+      --bezel: #12192e;
+      --screen-w: 375px;
+      --screen-h: 812px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      background: var(--bg);
+      font-family: Rubik, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden
+    }
+
+    .stage {
+      transform-origin: center center
+    }
+
+    .phone {
+      position: relative;
+      width: calc(var(--screen-w) + 28px);
+      height: calc(var(--screen-h) + 28px);
+      padding: 14px;
+      border-radius: 58px;
+      background: var(--bezel);
+      box-shadow: 0 0 0 2px #2a3350, 0 30px 80px rgba(18, 25, 46, .28), 0 8px 24px rgba(18, 25, 46, .16)
+    }
+
+    .screen {
+      position: relative;
+      width: var(--screen-w);
+      height: var(--screen-h);
+      border-radius: 44px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      flex-direction: column
+    }
+
+    .status {
+      position: relative;
+      flex: none;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px 0 30px;
+      direction: ltr;
+      color: #12192e;
+      font-size: 15px;
+      font-weight: 600;
+      background: #fff
+    }
+
+    .notch {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 160px;
+      height: 30px;
+      transform: translateX(-50%);
+      border-radius: 0 0 18px 18px;
+      background: var(--bezel)
+    }
+
+    .status-r {
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .status svg {
+      display: block
+    }
+
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: 0;
+      display: block;
+      background: #fff
+    }
+
+    .home {
+      position: relative;
+      flex: none;
+      height: 30px;
+      background: #fff;
+      pointer-events: none
+    }
+
+    .home::after {
+      content: "";
+      position: absolute;
+      bottom: 9px;
+      left: 50%;
+      width: 134px;
+      height: 5px;
+      transform: translateX(-50%);
+      border-radius: 3px;
+      background: #12192e
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stage" id="stage">
+    <div class="phone">
+      <div class="screen">
+        <div class="status" aria-hidden="true">
+          <span>08:34</span>
+          <span class="notch"></span>
+          <span class="status-r">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="#12192e">
+              <rect x="0" y="8" width="3" height="4" rx="1" />
+              <rect x="5" y="5.5" width="3" height="6.5" rx="1" />
+              <rect x="10" y="3" width="3" height="9" rx="1" />
+              <rect x="15" y="0" width="3" height="12" rx="1" />
+            </svg>
+            <span style="font-size:13px">4G</span>
+            <svg width="26" height="12" viewBox="0 0 26 12" fill="none">
+              <rect x=".75" y=".75" width="21.5" height="10.5" rx="3" stroke="#12192e" stroke-opacity=".4" stroke-width="1.5" />
+              <rect x="2.5" y="2.5" width="12" height="7" rx="1.6" fill="#faa81a" />
+              <rect x="23.5" y="4" width="2" height="4" rx="1" fill="#12192e" fill-opacity=".4" />
+            </svg>
+          </span>
+        </div>
+        <iframe src="./" title="בנק ירושלים, תצוגת מובייל"></iframe>
+        <span class="home" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // scale the phone down to fit short windows
+    (function () {
+      var stage = document.getElementById('stage');
+      function fit() {
+        var s = Math.min(1, (window.innerHeight - 40) / 840, (window.innerWidth - 40) / 403);
+        stage.style.transform = 'scale(' + s + ')';
+      }
+      fit();
+      window.addEventListener('resize', fit);
+    })();
+  </script>
+</body>
+
+</html>
