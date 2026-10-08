@@ -111,6 +111,7 @@
 <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><path d="M6 10.9a6 6 0 0 1 12 0v4.4c0 .9.35 1.75 1 2.4l.5.5h-15l.5-.5c.65-.65 1-1.5 1-2.4z"/><path d="M10 20.6c.45.55 1.15.9 2 .9s1.55-.35 2-.9"/><path d="M12 3.2v1.7"/></g></symbol>
 <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><circle cx="12" cy="8.2" r="4.2"/><path d="M4.6 20.5c.75-3.9 3.75-6.1 7.4-6.1s6.65 2.2 7.4 6.1"/></g></symbol>
 <symbol id="i-logout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><path d="M13.5 4h4.5a1.5 1.5 0 0 1 1.5 1.5v13A1.5 1.5 0 0 1 18 20h-4.5"/><path d="M15 12H4.5M8.2 8.2 4.5 12l3.7 3.8"/></g></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></g></symbol>
 <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></g></symbol>
 <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><path d="M6 6l12 12M18 6 6 18"/></g></symbol>
 <symbol id="i-plus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="stroke-width:var(--ic-sw,1.5)"><path d="M12 5v14M5 12h14"/></g></symbol>
@@ -358,8 +359,8 @@
         <svg class="ic ic-send" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-send"/></svg>
         <span class="hd-send-t">שליחת הוראה</span>
       </button>
-      <button class="hd-icon-btn hd-star" aria-label="מועדפים">
-        <svg class="ic ic-star" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
+      <button class="hd-icon-btn hd-star hd-lang" type="button" aria-label="שינוי שפה" title="שינוי שפה">
+        <svg class="ic ic-globe" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg>
       </button>
       <button class="hd-icon-btn hd-bell" aria-label="התראות">
         <svg class="ic ic-bell" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg>
@@ -628,9 +629,8 @@
         <div class="ov-cards">
           <div class="ov-card ov-c-blue">
             <span class="ov-ico"><svg class="ic ic-line" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-line"/></svg></span>
-            <div class="ov-lbl">שווי נוכחי בש"ח</div>
+            <div class="ov-lbl">שווי נוכחי</div>
             <span class="ov-val"><span class="ov-cur">₪</span>3,890,368<span class="ov-dec">.14</span></span>
-            <div class="ov-date">נכון לתאריך 13.10.2026, 08:34</div>
             <svg class="ov-deco ov-wave" viewBox="0 0 220 70" preserveAspectRatio="none" aria-hidden="true">
               <defs>
                 <linearGradient id="ovl1" x1="0" x2="1" y1="0" y2="0">
@@ -716,7 +716,7 @@
           </div>
           <div class="ov-card ov-c-red">
             <span class="ov-ico"><svg class="ic ic-trade" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-trade"/></svg></span>
-            <div class="ov-lbl">שינוי ב- %</div>
+            <div class="ov-lbl">שינוי</div>
             <span class="ov-val"><span class="ov-red">-0.11%</span></span>
             <svg class="ov-deco ov-wave" viewBox="0 0 220 70" preserveAspectRatio="none" aria-hidden="true">
               <defs>
@@ -761,7 +761,7 @@
           <div class="ov-card ov-c-gr">
             <span class="ov-ico"><svg class="ic ic-line" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-line"/></svg></span>
             <div class="ov-lbl">רווח והפסד יומי</div>
-            <span class="ov-val"><span class="ov-red">-1.4</span></span>
+            <span class="ov-val"><span class="ov-cur">₪</span><span class="ov-red">-1.4</span></span>
             <svg class="ov-deco ov-wave" viewBox="0 0 220 70" preserveAspectRatio="none" aria-hidden="true">
               <defs>
                 <linearGradient id="ovl4" x1="0" x2="1" y1="0" y2="0">
@@ -882,9 +882,9 @@
                 pathLength="100" fill="none" stroke="#fff" stroke-width="1.4" opacity=".6" stroke-linecap="round" />
             </svg>
           </div>
-          <div class="ov-card ov-x ov-x1"><div class="ov-lbl">הכנסה לקבל</div><span class="ov-val">0.00</span></div>
-          <div class="ov-card ov-x ov-x2"><div class="ov-lbl">שינוי מעלות %</div><span class="ov-val"><span class="ov-red">-52.73%</span></span></div>
-          <div class="ov-card ov-x ov-x3"><div class="ov-lbl">יתרת בטחונות</div><span class="ov-val"><span class="ov-red">-1,247</span><svg class="ic ov-rf" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-refresh"/></svg></span></div>
+          <div class="ov-card ov-x ov-x1"><div class="ov-lbl">הכנסה לקבל</div><span class="ov-val"><span class="ov-cur">₪</span>0.00</span></div>
+          <div class="ov-card ov-x ov-x2"><div class="ov-lbl">שינוי מעלות</div><span class="ov-val"><span class="ov-red">-52.73%</span></span></div>
+          <div class="ov-card ov-x ov-x3"><div class="ov-lbl">יתרת בטחונות</div><span class="ov-val"><span class="ov-cur">₪</span><span class="ov-red">-1,247</span><svg class="ic ov-rf" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-refresh"/></svg></span></div>
         </div>
       </section>
 
@@ -1551,7 +1551,7 @@
                 <th>במבע</th>
                 <th>מטבע</th>
                 <th>כמות נומינלית</th>
-                <th class="hl-or">% שינוי</th>
+                <th class="hl-or">שינוי</th>
                 <th>שער</th>
                 <th>שווי מכר</th>
                 <th>שינוי/חפוי יומי</th>
@@ -5385,7 +5385,7 @@
         dr.querySelector('.dk-dr-t').textContent = name ? name.textContent.trim() : '';
         var price = cells[t.classList.contains('hl-grid') ? 11 : 2];
         dr.querySelector('.dk-dr-v').textContent = price ? price.textContent.trim() : '';
-        dr.querySelector('.dk-dr-s').textContent = (pt ? pt.textContent.trim() + ' · ' : '') + 'נכון לתאריך 13.10.2026, 08:34';
+        dr.querySelector('.dk-dr-s').textContent = (pt ? pt.textContent.trim() : '');
         var dl = dr.querySelector('.dk-dr-list'); dl.innerHTML = '';
         cells.forEach(function (td) {
           var l = td.getAttribute('data-label'), v = td.textContent.trim();
@@ -5762,6 +5762,33 @@
   @media (min-width:901px) {
     html body .app>header.hd { position: sticky !important; top: 0; z-index: 60; background: #fff }
     html body .ir { position: fixed !important; top: 78px !important; left: 0; z-index: 59; background: #f8f9fb }
+  }
+</style>
+<style id="kpi-cur">
+  /* shekel sign in the small KPI cells: same look everywhere (attached, same size) */
+  @media (min-width:901px) {
+    html body .ov .ov-cards > .ov-card.ov-x .ov-cur { margin: 0 !important; font-size: 18px !important; font-weight: 700 !important }
+  }
+</style>
+<style id="labels-below">
+  /* desktop: labels above numbers; the 7 small labels share one top line, all numbers share the headline baseline */
+  @media (min-width:901px) {
+    html body .ov .ov-cards > .ov-card:is(:nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6), .ov-x) { display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-self: stretch !important; margin-bottom: 0 !important }
+    html body .ov .ov-cards > .ov-card:is(:nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6), .ov-x) .ov-lbl { order: 0 !important; margin: 0 !important; text-decoration: none !important }
+    html body .ov .ov-cards > .ov-card:is(:nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6), .ov-x) .ov-val { order: 1 !important; margin: 0 !important }
+    html body .ov .ov-cards > .ov-card:nth-child(6) { padding-top: 0 !important; padding-bottom: 5px !important }
+  }
+  @media (min-width:1860px) {
+    html body .ov .ov-cards > .ov-card:is(:nth-child(3), :nth-child(4), :nth-child(5), .ov-x) { padding-top: 14px !important; padding-bottom: 13px !important }
+    html body .ov .ov-cards > .ov-card:nth-child(6) { padding-top: 14px !important }
+    html body .ov .ov-cards > .ov-card:is(:nth-child(3), :nth-child(4), :nth-child(5), .ov-x) { border-right: 0 !important; background: linear-gradient(#dfe3ee, #dfe3ee) no-repeat right 50% / 1px 52px !important }
+  }
+</style>
+<style id="hd-trim">
+  /* desktop header: no avatar / user name block */
+  @media (min-width:901px) {
+    html body .hd .hd-avatar, html body .hd .hd-user { display: none !important }
+    html body .hd .hd-lang { order: 99 !important }
   }
 </style>
 </body>
