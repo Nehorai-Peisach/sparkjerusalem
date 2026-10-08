@@ -2001,7 +2001,7 @@
       <div class="m-sec m-init-idx">
         <div class="m-idx" data-m-idx="indices" aria-label="מדדים"></div>
       </div>
-      <div class="m-cta"><p class="m-init-hint"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>התחברו כדי לצפות בתיק, לסחור ולקבל התראות</p><button class="m-cta-btn" type="button" data-go="home">כניסה</button></div>
+      <div class="m-cta"><button class="m-cta-btn" type="button" data-go="home">כניסה</button></div>
     </section>
 
     <!-- ===== screen: view (pre-login portfolio peek) — owner: skeleton ===== -->
@@ -6412,10 +6412,6 @@
     #mscr-init .m-peek .m-chg.down .m-chg-p { background: #fcebed }
     #mscr-init .m-peek .m-chg-p::before { content: ""; width: 10px; height: 10px; background: currentColor; -webkit-mask: var(--m-arrow) center / contain no-repeat; mask: var(--m-arrow) center / contain no-repeat }
     #mscr-init .m-peek .m-chg.down .m-chg-p::before { transform: rotate(180deg) }
-    /* login invite above the CTA */
-    #mscr-init:has(> .m-cta) { padding-bottom: calc(var(--m-cta-h) + 44px + env(safe-area-inset-bottom)) }
-    #mscr-init .m-init-hint { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 0 9px; font-size: 13px; color: var(--m-text2) }
-    #mscr-init .m-init-hint svg.ic { width: 15px; height: 15px; flex: none; color: #c97a00; --ic-sw: 1.8 }
     #mscr-init .m-eye { width: 24px; height: 24px; color: var(--m-navy); display: block }
   }
 </style>
